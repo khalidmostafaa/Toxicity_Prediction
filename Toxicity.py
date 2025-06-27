@@ -5,11 +5,12 @@ from rdkit import Chem
 from rdkit.Chem import AllChem
 
 # Load model and label names
-with open(r"E:\Projects\CADD\Toxcity Predicition Model\tox_model.pkl", "rb") as f:
+with open("tox_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open(r"E:\Projects\CADD\Toxcity Predicition Model\label_cols.pkl", "rb") as f:
+with open("label_cols.pkl", "rb") as f:
     label_cols = pickle.load(f)
+
 
 
 # ECFP4 fingerprint function
